@@ -43,6 +43,54 @@ header {
 .nav li a:hover {
   color: rgb(170, 96, 240);
 }
+/* Ícone hamburguer */
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+
+/* Esconde o checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* Estilo padrão do nav (desktop) */
+nav {
+  display: block;
+}
+
+/* --------- MOBILE --------- */
+@media (max-width: 768px) {
+  /* Mostra o ícone só no mobile */
+  .menu-icon {
+    display: block;
+  }
+
+  /* Esconde o menu por padrão */
+  nav {
+    display: none;
+    width: 100%;
+    background: #2a0c45;
+    position: absolute;
+    top: 70px; /* altura do header */
+    left: 0;
+    padding: 20px 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  /* Quando o checkbox é marcado, exibe o menu */
+  #menu-toggle:checked + .menu-icon + nav {
+    display: block;
+  }
+}
+
 
 /* -------- CTA -------- */
 .cta {
@@ -286,3 +334,4 @@ footer .social a:hover {
     grid-template-columns: 1fr; /* 1 produto por linha */
   }
 }
+
