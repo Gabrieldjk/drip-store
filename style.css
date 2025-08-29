@@ -80,7 +80,7 @@ nav {
   }
 
   nav ul {
-    flex-direction: column;
+    flex-direction: row;
     gap: 15px;
     text-align: center;
   }
@@ -334,4 +334,5 @@ footer .social a:hover {
     grid-template-columns: 1fr; /* 1 produto por linha */
   }
 }
+
 
