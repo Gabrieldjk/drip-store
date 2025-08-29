@@ -51,7 +51,7 @@ header {
     space-between;
   align-items:center;
   padding: 15px 30px;
-  background-color: #800080;
+  background-color:#27105d ;
   position: sticky;
   top: 0;
 }
@@ -295,6 +295,7 @@ footer .social a:hover {
     margin-left: 0;
   }
 }
+
 
 
 
