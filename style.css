@@ -279,3 +279,133 @@ footer .social a:hover {
     max-width: 250px;
   }
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(240deg, #36075e, #09071b);
+    color: white;
+    min-height: 100vh;
+}
+
+/* -------- HEADER -------- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+/* -------- NAV -------- */
+.nav {
+    display: flex;
+    list-style: none;
+}
+
+.nav li {
+    margin-left: 25px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: rgb(170, 96, 240);
+}
+
+/* -------- CTA -------- */
+.cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80vh;
+    padding: 20px;
+}
+
+.main-text h1 {
+    font-size: 2.5rem;
+    color: rgb(170, 96, 240);
+    margin-bottom: 15px;
+}
+
+.main-text p {
+    font-size: 1.2rem;
+    color: #ddd;
+}
+
+/* -------- RESPONSIVIDADE -------- */
+
+/* Tablets (até 1024px) */
+@media (max-width: 1024px) {
+    header {
+        padding: 15px 20px;
+    }
+
+    .main-text h1 {
+        font-size: 2rem;
+    }
+
+    .main-text p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Celulares (até 768px) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .main-text p {
+        font-size: 1rem;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+}
+
+/* Celulares pequenos (até 480px) */
+@media (max-width: 480px) {
+    .main-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .main-text p {
+        font-size: 0.9rem;
+    }
+
+    .nav li {
+        margin-left: 0;
+    }
+}
+
+
