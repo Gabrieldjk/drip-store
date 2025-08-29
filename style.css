@@ -51,6 +51,7 @@ header {
     space-between;
   align-items:center;
   padding: 15px 30px;
+  color: rgb(170, 96, 240);
   position: sticky;
   top: 0;
 }
@@ -294,6 +295,7 @@ footer .social a:hover {
     margin-left: 0;
   }
 }
+
 
 
 
