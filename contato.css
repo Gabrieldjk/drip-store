@@ -1,5 +1,4 @@
-
-  body {
+body {
   font-family: Arial, sans-serif;
   background-color: linear-gradient(240deg, #36075e, #09071b);
   margin: 0;
@@ -40,14 +39,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #3498db;
+  color: #510655;
 }
 
 .formulario {
   max-width: 600px;
   margin: 40px auto;
   padding: 20px;
-  background: #fff;
+  background-color: linear-gradient(240deg, #36075e, #09071b);
   border-radius: 8px;
   border: 1px solid #ddd;
 }
@@ -68,7 +67,7 @@ form input,
 form textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #5f1155;
   border-radius: 6px;
   margin-bottom: 15px;
   font-size: 16px;
@@ -79,8 +78,8 @@ form textarea {
 }
 
 form button {
-  background: #3498db;
-  color: #fff;
+  background-color: linear-gradient(240deg, #36075e, #09071b);
+  color: #5c0368;
   border: none;
   padding: 12px 20px;
   border-radius: 6px;
