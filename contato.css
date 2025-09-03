@@ -1,103 +1,111 @@
-* {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-    }
 
     body {
-      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+      background: #d8d7d7f5;
+      margin: 0;
+      padding: 0;
       color: #333;
+    }
+
+    .wrap {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
     }
 
     header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px;
-      background-color: #fff;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+      margin-bottom: 20px;
     }
 
-    .logo img {
-      height: 50px;
+    h1 {
+      margin: 0 0 10px;
+      font-size: 24px;
     }
 
-    nav ul {
-      list-style: none;
-      display: flex;
+    p.lead {
+      color: #555;
+      margin: 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       gap: 20px;
     }
 
-    nav ul li a {
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-      transition: color 0.3s;
+    @media (max-width: 800px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
     }
 
-    nav ul li a:hover {
-      color: rgb(170, 96, 240);
-    }
-
-    .formulario {
-      max-width: 600px;
-      margin: 60px auto;
+    .card {
       background: #fff;
-      padding: 40px 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.05);
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
     }
 
-    .formulario h2 {
-      text-align: center;
-      color: rgb(170, 96, 240);
-      margin-bottom: 30px;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-
-    label {
+    form label {
+      display: block;
+      margin: 10px 0 5px;
       font-weight: bold;
-      text-align: left;
     }
 
-    input, textarea {
-      padding: 12px;
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 10px;
       border: 1px solid #ccc;
-      border-radius: 8px;
-      font-size: 16px;
-      resize: vertical;
+      border-radius: 6px;
+      margin-bottom: 10px;
     }
 
-    button {
-      background-color: rgb(170, 96, 240);
+    form textarea {
+      min-height: 120px;
+    }
+
+    form button {
+      background: #3498db;
       color: #fff;
-      padding: 14px;
       border: none;
-      border-radius: 8px;
-      font-size: 16px;
-      font-weight: bold;
+      padding: 10px 18px;
+      border-radius: 6px;
       cursor: pointer;
-      transition: background 0.3s ease;
+      font-weight: bold;
     }
 
-    button:hover {
-      background-color: #a860f0b7;
+    form button:hover {
+      background: #2980b9;
     }
 
-    @media (max-width: 600px) {
-      .formulario {
-        margin: 40px 20px;
-        padding: 30px 20px;
-      }
+    .info h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
 
-      nav ul {
-        flex-direction: column;
-        align-items: flex-end;
-      }
+    .info ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .info li {
+      margin-bottom: 12px;
+    }
+
+    .info li strong {
+      color: #3498db;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+      color: #555;
+    }
+    li {
+       border: 1px solid #ddd;
+      border-radius: 1px;
     }
