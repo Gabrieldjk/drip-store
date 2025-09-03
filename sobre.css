@@ -1,8 +1,5 @@
-/* ==================== IMPORTAÇÃO DE FONTES ==================== */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
 
-/* ==================== RESET + CONFIGURAÇÃO GERAL ==================== */
-* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -13,12 +10,11 @@ body {
   background: linear-gradient(240deg, #36075e, #09071b);
   color: white;
   min-height: 100vh;
-  padding-top: 90px; /* espaço pro header fixo */
+  padding-top: 90px;
   display: flex;
   flex-direction: column;
 }
 
-/* ==================== HEADER ==================== */
 header {
   position: fixed;
   top: 0;
@@ -53,7 +49,6 @@ header {
   color: rgb(170, 96, 240);
 }
 
-/* ==================== SEÇÃO SOBRE ==================== */
 .sobre {
   max-width: 900px;
   margin: auto;
@@ -74,7 +69,6 @@ header {
   line-height: 1.6;
 }
 
-/* ==================== RODAPÉ ==================== */
 footer {
   background-color: #09071b;
   color: #ccc;
@@ -93,7 +87,6 @@ footer .social a:hover {
   color: #fff;
 }
 
-/* ==================== RESPONSIVIDADE ==================== */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -114,3 +107,4 @@ footer .social a:hover {
     font-size: 1rem;
   }
 }
+
