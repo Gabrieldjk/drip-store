@@ -30,7 +30,7 @@ header {
   padding: 15px 20px;
   background: #09071b;         
   z-index: 1000;              
-
+}
 .logo img {
   width: 50px;
   height: auto;
@@ -298,4 +298,5 @@ footer .social a:hover {
     max-width: 250px;
   }
 }
+
 
