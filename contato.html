@@ -4,15 +4,120 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contato - Drip Store</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .logo img {
+      height: 50px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: rgb(170, 96, 240);
+    }
+
+    .formulario {
+      max-width: 600px;
+      margin: 60px auto;
+      background: #fff;
+      padding: 40px 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    }
+
+    .formulario h2 {
+      text-align: center;
+      color: rgb(170, 96, 240);
+      margin-bottom: 30px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    label {
+      font-weight: bold;
+      text-align: left;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      resize: vertical;
+    }
+
+    button {
+      background-color: rgb(170, 96, 240);
+      color: #fff;
+      padding: 14px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #a860f0b7;
+    }
+
+    @media (max-width: 600px) {
+      .formulario {
+        margin: 40px 20px;
+        padding: 30px 20px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: flex-end;
+      }
+    }
+  </style>
 </head>
 <body>
+
   <header>
     <div class="logo">
       <img src="imagens/logo-jordan-4.png" alt="Drip Store">
     </div>
     <nav>
-      <ul class="nav">
+      <ul>
         <li><a href="index.html">Início</a></li>
         <li><a href="produtos.html">Produtos</a></li>
         <li><a href="contato.html">Contato</a></li>
@@ -35,5 +140,6 @@
       <button type="submit">Enviar</button>
     </form>
   </section>
+
 </body>
 </html>
