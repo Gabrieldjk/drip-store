@@ -1,13 +1,13 @@
 body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(240dag,#36075e, #09071b);
+  background: linear-gradient(240deg, #36075e, #09071b);
   margin: 0;
   padding: 0;
   color: #333;
 }
 
 header {
-  background: linear-gradient(240dag, #36075e, #09071b);
+  background: linear-gradient(240deg, #36075e, #09071b);
   padding: 20px;
   display: flex;
   align-items: center;
@@ -46,7 +46,7 @@ nav ul li a:hover {
   max-width: 600px;
   margin: 40px auto;
   padding: 20px;
-  background-color: linear-gradient(240deg, #36075e, #09071b);
+  background: linear-gradient(240deg, #36075e, #09071b);
   border-radius: 8px;
   border: 1px solid #ddd;
 }
@@ -78,7 +78,7 @@ form textarea {
 }
 
 form button {
-  background-color: linear-gradient(240deg, #36075e, #09071b);
+  background: linear-gradient(240deg, #36075e, #09071b); 
   color: #5c0368;
   border: none;
   padding: 12px 20px;
