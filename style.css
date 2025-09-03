@@ -1,66 +1,60 @@
-/* ==================== IMPORTAÇÃO DE FONTES ==================== */
-/* Importa a fonte Poppins do Google Fonts para usar no site */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
 
-/* ==================== RESET + CONFIGURAÇÃO GERAL ==================== */
 * {
-  margin: 0;                  /* remove margens padrões */
-  padding: 0;                 /* remove espaçamentos padrões */
-  box-sizing: border-box;      /* inclui bordas e paddings no cálculo do tamanho */
-  font-family: "Poppins", sans-serif; /* define a fonte global */
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;     
+  font-family: "Poppins", sans-serif; 
 }
 
 body {
-  background: linear-gradient(240deg, #36075e, #09071b); /* fundo degradê */
-  color: white;                /* texto branco */
-  min-height: 100vh;           /* ocupa o espaço na altura da tela */
-  padding-top: 90px;           /* evita que o conteúdo fique atrás do header fixo */
+  background: linear-gradient(240deg, #36075e, #09071b);
+  color: white;               
+  min-height: 100vh;          
+  padding-top: 90px;          
   margin:0;
   padding:0;
-  overflow-x:hidden; /* impede rolagem horizontal*/
+  overflow-x:hidden; 
   width: 100%;
   box-sizing: border-box;
 }
 
-/* ==================== HEADER (CABEÇALHO FIXO) ==================== */
-header {
-  position: fixed;             /* fixa no topo da tela */
-  top:0;
-  width: 100%;                 /* ocupa toda a largura */
-  display: flex;               /* organiza logo e menu lado a lado */
-  justify-content: space-between; /* logo à esquerda e menu à direita */
-  align-items: center;         /* alinha verticalmente */
-  padding: 15px 20px;
-  background: #09071b;         /* cor de fundo sólida */
-  z-index: 1000;               /* garante que fica acima dos outros elementos */
-}
 
-/* Logo */
+header {
+  position: fixed;             
+  top:0;
+  width: 100%;                 
+  display: flex;              
+  justify-content: space-between; 
+  align-items: center;        
+  padding: 15px 20px;
+  background: #09071b;         
+  z-index: 1000;              
+
 .logo img {
   width: 50px;
   height: auto;
 }
 
-/* ==================== MENU (DESKTOP) ==================== */
 .nav {
-  display: flex;               /* itens lado a lado */
-  list-style: none;            /* remove bolinhas */
+  display: flex;              
+  list-style: none;            
   align-items: center;
-  gap: 25px;                   /* espaço entre links */
+  gap: 25px;                   
 }
 
 .nav li a {
-  text-decoration: none;       /* remove sublinhado */
-  color: white;                /* cor branca */
+  text-decoration: none;       
+  color: white;                
   font-weight: 500;
-  transition: color 0.3s;      /* efeito suave ao passar o mouse */
+  transition: color 0.3s;      
 }
 
 .nav li a:hover {
-  color: rgb(170, 96, 240);    /* muda de cor no hover */
+  color: rgb(170, 96, 240);    
 }
 
-/* ==================== MOBILE ==================== */
+
 @media (max-width: 768px) {
 
   nav {
@@ -81,14 +75,14 @@ header {
 
 }
 
-/* ==================== (CTA) ==================== */
+
 .cta {
   display: flex;
-  justify-content: center;     /* centraliza horizontal */
-  align-items: center;         /* centraliza vertical */
+  justify-content: center;     
+  align-items: center;         
   text-align: center;
-  height: 80vh;                /* ocupa 80% da altura da tela */
-  padding: 200px;              /* espaçamento interno */
+  height: 80vh;                
+  padding: 200px;            
 }
 
 .main-text h1 {
@@ -101,7 +95,7 @@ header {
   font-size: 1.2rem;
   color: #ddd;
 }
-/* ==================== BANNER PROMOCIONAL ==================== */
+
 .banner-promocao {
   background: linear-gradient(90deg, #160a28, #3c036e);
   padding: 50px 30px;
@@ -113,7 +107,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;             /* quebra linha se faltar espaço */
+  flex-wrap: wrap;             
   max-width: 1100px;
   margin: auto;
   gap: 30px;
@@ -158,7 +152,7 @@ header {
 }
 
 
-/* ==================== PRODUTOS ==================== */
+
 .produtos {
   padding: 60px 40px;
   background: linear-gradient(180deg, #100820, #27105d);
@@ -171,10 +165,9 @@ header {
   color: rgb(170, 96, 240);
 }
 
-/* Grid de produtos responsivo */
 .produtos-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* ajusta automaticamente */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
 }
 .produto {
@@ -186,7 +179,7 @@ header {
 }
 
 .produto:hover {
-  transform: scale(1.05);      /* efeito de zoom */
+  transform: scale(1.05);      
 }
 
 .produto img {
@@ -209,7 +202,7 @@ header {
   color: #ccc;
 }
 
-/* Botão comprar */
+
 .comprar {
   background-color: rgb(170, 96, 240);
   color: white;
@@ -225,7 +218,6 @@ header {
 }
 
 
-/* ==================== FOOTER ==================== */
 footer {
   background-color: #09071b;
   color: #ccc;
@@ -245,11 +237,10 @@ footer .social a {
 
 footer .social a:hover {
   text-decoration: none;
-  color: rgb(170, 96, 240);    /* muda de cor no hover */
+  color: rgb(170, 96, 240);    
 }
 
-/* ==================== RESPONSIVIDADE ==================== */
-/* Tablets (até 1024px) */
+
 @media (max-width: 1024px) {
   header {
     padding: 15px 20px;
@@ -264,7 +255,7 @@ footer .social a:hover {
   }
 }
 
-/* Celulares médios (até 768px) */
+
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -308,25 +299,8 @@ footer .social a:hover {
   }
 }
 
-/* Celulares pequenos (até 480px) */
-@media (max-width: 480px) {
-  .main-text h1 {
-    font-size: 1.5rem;
-  }
 
-  .main-text p {
-    font-size: 0.9rem;
-  }
 
-  .nav {
-    gap: 10px;
-  }
 
-  .nav li a {
-    font-size: 14px;
-  }
 
-  .produtos-grid {
-    grid-template-columns: 1fr; /* apenas 1 produto por linha */
-  }
 }
