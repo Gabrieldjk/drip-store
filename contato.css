@@ -12,7 +12,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #cccccc;
 }
 
 .logo img {
@@ -49,7 +49,7 @@ nav ul li a:hover {
   background: linear-gradient(240deg, #36075e, #09071b);
   border-radius: 8px;
   border: 2px solid #5f1155;
-  color: #fff;
+  color: #ffffff;
 }
 
 .formulario h2 {
@@ -67,7 +67,7 @@ form label {
 
 form input,
 form textarea {
-  width: 100%;
+  width: 90%;
   padding: 10px;
   border: 1px solid #5f1155;
   border-radius: 6px;
@@ -78,7 +78,7 @@ form textarea {
 }
 
 form textarea {
-  min-height: 120px;
+  min-height: 20px;
 }
 
 form button {
@@ -93,9 +93,7 @@ form button {
   transition: background 0.3s;
 }
 
-form button:hover {
-  background: #2980b9;
-}
+
 
 @media (max-width: 600px) {
   header {
@@ -112,5 +110,44 @@ form button:hover {
   .formulario {
     margin: 20px;
     padding: 15px;
+  }
+}
+
+footer {
+  background-color: #09071b;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+}
+
+footer .social a {
+  color: rgb(170, 96, 240);
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer .social a:hover {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .sobre h1 {
+    font-size: 2rem;
+  }
+
+  .sobre p {
+    font-size: 1rem;
   }
 }
