@@ -1,0 +1,116 @@
+/* ==================== IMPORTAÇÃO DE FONTES ==================== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+/* ==================== RESET + CONFIGURAÇÃO GERAL ==================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(240deg, #36075e, #09071b);
+  color: white;
+  min-height: 100vh;
+  padding-top: 90px; /* espaço pro header fixo */
+  display: flex;
+  flex-direction: column;
+}
+
+/* ==================== HEADER ==================== */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: #09071b;
+  z-index: 1000;
+}
+
+.logo img {
+  width: 50px;
+  height: auto;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav li a:hover {
+  color: rgb(170, 96, 240);
+}
+
+/* ==================== SEÇÃO SOBRE ==================== */
+.sobre {
+  max-width: 900px;
+  margin: auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.sobre h1 {
+  color: rgb(170, 96, 240);
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.sobre p {
+  font-size: 1.1rem;
+  color: #ddd;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* ==================== RODAPÉ ==================== */
+footer {
+  background-color: #09071b;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+}
+
+footer .social a {
+  color: rgb(170, 96, 240);
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer .social a:hover {
+  color: #fff;
+}
+
+/* ==================== RESPONSIVIDADE ==================== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .sobre h1 {
+    font-size: 2rem;
+  }
+
+  .sobre p {
+    font-size: 1rem;
+  }
+}

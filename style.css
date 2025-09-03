@@ -1,0 +1,332 @@
+/* ==================== IMPORTAÇÃO DE FONTES ==================== */
+/* Importa a fonte Poppins do Google Fonts para usar no site */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+/* ==================== RESET + CONFIGURAÇÃO GERAL ==================== */
+* {
+  margin: 0;                  /* remove margens padrões */
+  padding: 0;                 /* remove espaçamentos padrões */
+  box-sizing: border-box;      /* inclui bordas e paddings no cálculo do tamanho */
+  font-family: "Poppins", sans-serif; /* define a fonte global */
+}
+
+body {
+  background: linear-gradient(240deg, #36075e, #09071b); /* fundo degradê */
+  color: white;                /* texto branco */
+  min-height: 100vh;           /* ocupa o espaço na altura da tela */
+  padding-top: 90px;           /* evita que o conteúdo fique atrás do header fixo */
+  margin:0;
+  padding:0;
+  overflow-x:hidden; /* impede rolagem horizontal*/
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* ==================== HEADER (CABEÇALHO FIXO) ==================== */
+header {
+  position: fixed;             /* fixa no topo da tela */
+  top:0;
+  width: 100%;                 /* ocupa toda a largura */
+  display: flex;               /* organiza logo e menu lado a lado */
+  justify-content: space-between; /* logo à esquerda e menu à direita */
+  align-items: center;         /* alinha verticalmente */
+  padding: 15px 20px;
+  background: #09071b;         /* cor de fundo sólida */
+  z-index: 1000;               /* garante que fica acima dos outros elementos */
+}
+
+/* Logo */
+.logo img {
+  width: 50px;
+  height: auto;
+}
+
+/* ==================== MENU (DESKTOP) ==================== */
+.nav {
+  display: flex;               /* itens lado a lado */
+  list-style: none;            /* remove bolinhas */
+  align-items: center;
+  gap: 25px;                   /* espaço entre links */
+}
+
+.nav li a {
+  text-decoration: none;       /* remove sublinhado */
+  color: white;                /* cor branca */
+  font-weight: 500;
+  transition: color 0.3s;      /* efeito suave ao passar o mouse */
+}
+
+.nav li a:hover {
+  color: rgb(170, 96, 240);    /* muda de cor no hover */
+}
+
+/* ==================== MOBILE ==================== */
+@media (max-width: 768px) {
+
+  nav {
+    display: none;
+    position: absolute;
+    top: 70px;               
+    right: 0;
+    width: 100%;
+    background: #2a0c45;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;    
+    gap: 20px;
+  }
+
+}
+
+/* ==================== (CTA) ==================== */
+.cta {
+  display: flex;
+  justify-content: center;     /* centraliza horizontal */
+  align-items: center;         /* centraliza vertical */
+  text-align: center;
+  height: 80vh;                /* ocupa 80% da altura da tela */
+  padding: 200px;              /* espaçamento interno */
+}
+
+.main-text h1 {
+  font-size: 2.5rem;
+  color: rgb(170, 96, 240);
+  margin-bottom: 15px;
+}
+
+.main-text p {
+  font-size: 1.2rem;
+  color: #ddd;
+}
+/* ==================== BANNER PROMOCIONAL ==================== */
+.banner-promocao {
+  background: linear-gradient(90deg, #160a28, #3c036e);
+  padding: 50px 30px;
+  color: white;
+  text-align: center;
+}
+
+.banner-conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;             /* quebra linha se faltar espaço */
+  max-width: 1100px;
+  margin: auto;
+  gap: 30px;
+}
+
+.banner-conteudo .texto {
+  flex: 1;
+  text-align: left;
+}
+
+.banner-conteudo .texto h2 {
+  font-size: 2.0rem;
+  color: rgb(255, 99, 132);
+  margin-bottom: 10px;
+  
+}
+
+.banner-conteudo .texto p {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.banner-conteudo .preco {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #a860f0;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.banner-conteudo .imagem {
+  flex: 1;
+  text-align: right;
+}
+
+.banner-conteudo .imagem img {
+  max-width: 100%;
+  height: auto;
+  display:block;
+  margin:0 auto;
+  border-radius: 20px;
+}
+
+
+/* ==================== PRODUTOS ==================== */
+.produtos {
+  padding: 60px 40px;
+  background: linear-gradient(180deg, #100820, #27105d);
+  text-align: center;
+}
+
+.produtos h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: rgb(170, 96, 240);
+}
+
+/* Grid de produtos responsivo */
+.produtos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* ajusta automaticamente */
+  gap: 20px;
+}
+.produto {
+  background-color: #2a0c45;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.produto:hover {
+  transform: scale(1.05);      /* efeito de zoom */
+}
+
+.produto img {
+  max-width:100%;
+  height:auto;
+  display:block;
+  margin: 0 auto;
+  width: 90%;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.produto h3 {
+  margin-bottom: 10px;
+  color: white;
+}
+
+.produto p {
+  margin-bottom: 15px;
+  color: #ccc;
+}
+
+/* Botão comprar */
+.comprar {
+  background-color: rgb(170, 96, 240);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.comprar:hover {
+  background-color: #a860f0b7;
+}
+
+
+/* ==================== FOOTER ==================== */
+footer {
+  background-color: #09071b;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  margin:0 auto;
+  max-width:100%;
+  display:block;
+}
+
+footer .social a {
+  color: rgb(170, 96, 240);
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer .social a:hover {
+  text-decoration: none;
+  color: rgb(170, 96, 240);    /* muda de cor no hover */
+}
+
+/* ==================== RESPONSIVIDADE ==================== */
+/* Tablets (até 1024px) */
+@media (max-width: 1024px) {
+  header {
+    padding: 15px 20px;
+  }
+
+  .main-text h1 {
+    font-size: 2rem;
+  }
+
+  .main-text p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Celulares médios (até 768px) */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .main-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .main-text p {
+    font-size: 1rem;
+  }
+
+  .logo img {
+    width: 80px;
+  }
+
+  .produtos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .banner-conteudo {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .banner-conteudo .texto,
+  .banner-conteudo .imagem {
+    text-align: center;
+  }
+
+  .banner-conteudo .imagem img {
+    max-width: 250px;
+  }
+}
+
+/* Celulares pequenos (até 480px) */
+@media (max-width: 480px) {
+  .main-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .main-text p {
+    font-size: 0.9rem;
+  }
+
+  .nav {
+    gap: 10px;
+  }
+
+  .nav li a {
+    font-size: 14px;
+  }
+
+  .produtos-grid {
+    grid-template-columns: 1fr; /* apenas 1 produto por linha */
+  }
+}
