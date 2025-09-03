@@ -3,7 +3,7 @@ body {
   background: linear-gradient(240deg, #36075e, #09071b);
   margin: 0;
   padding: 0;
-  color: #333;
+  color: #fff;
 }
 
 header {
@@ -33,7 +33,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #333;
+  color: #fff;
   font-weight: bold;
   transition: color 0.3s;
 }
@@ -48,7 +48,8 @@ nav ul li a:hover {
   padding: 20px;
   background: linear-gradient(240deg, #36075e, #09071b);
   border-radius: 8px;
-  border: 1px solid #ddd;
+  border: 2px solid #5f1155;
+  color: #fff;
 }
 
 .formulario h2 {
@@ -61,6 +62,7 @@ form label {
   display: block;
   margin: 10px 0 5px;
   font-weight: bold;
+  color: #fff;
 }
 
 form input,
@@ -71,6 +73,8 @@ form textarea {
   border-radius: 6px;
   margin-bottom: 15px;
   font-size: 16px;
+  color: #fff;
+  background-color: #2c1534;
 }
 
 form textarea {
@@ -78,8 +82,8 @@ form textarea {
 }
 
 form button {
-  background: linear-gradient(240deg, #36075e, #09071b); 
-  color: #5c0368;
+  background: linear-gradient(240deg, #36075e, #09071b);
+  color: #fff;
   border: none;
   padding: 12px 20px;
   border-radius: 6px;
